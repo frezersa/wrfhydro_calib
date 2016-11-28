@@ -14,7 +14,8 @@ echo $baserundir
 
 paramfile=`echo ${baserundir}/params_best.txt`
 
-declare -a soilp_mult_list=('bexp' 'smcmax' 'dksat')
+#declare -a soilp_mult_list=('bexp' 'smcmax' 'dksat')
+declare -a soilp_mult_list=('bexp' 'smcmax' 'dksat' 'CWPVT' 'VCMX25' 'MP' 'HVT' 'MFSNO')
 declare -a soilp_abs_list=('slope' 'refkdt')
 declare -a fulldom_mult_list=()
 declare -a fulldom_abs_list=('RETDEPRTFAC' 'LKSATFAC')
@@ -22,8 +23,10 @@ declare -a hydrotab_mult_list=('smcmax' 'dksat')
 declare -a hydrotab_abs_list=()
 declare -a gw_mult_list=()
 declare -a gw_abs_list=('Zmax' 'Expon')
-declare -a mptab_mult_list=('CWPVT' 'VCMX25' 'MP' 'HVT')
-declare -a mptab_abs_list=('MFSNO')
+#declare -a mptab_mult_list=('CWPVT' 'VCMX25' 'MP' 'HVT')
+#declare -a mptab_abs_list=('MFSNO')
+declare -a mptab_mult_list=()
+declare -a mptab_abs_list=()
 
 pausetime='1m'
 waittime='5m'
