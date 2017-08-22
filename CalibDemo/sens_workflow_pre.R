@@ -3,6 +3,7 @@ library(rwrfhydro)
 library(data.table)
 library(ggplot2)
 library(plyr)
+library(loo) # for nlist (ReadNamelist) function to work
 
 #########################################################
 # SETUP
