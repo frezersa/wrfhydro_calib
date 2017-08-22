@@ -47,7 +47,7 @@ objFn <- function (m, o, w=0.5, p=1) {  # Negative weighted mean NSE and log NSE
     # Weighted mean
     res <- ((w^p) * (nse^p) + (w^p) * (lnnse^p))^(1/p)
     0-res
-}
+#}
 #objFn <- function (m, o) {  # Negative NSE
 #    err1 <- sum((m - o)^2, na.rm=T)
 #    err2 <- sum((o - mean(o, na.rm=T))^2, na.rm=T)
@@ -63,4 +63,4 @@ archiveOutput <- FALSE
 
 # Archive model run files?
 archiveRun <- FALSE
-
+}
